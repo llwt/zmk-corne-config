@@ -37,8 +37,8 @@ layers:
   - .
   - /
   - \
-  - '&omni_move'
-  - Alt
+  - '&hyper'
+  - '&meh'
   - {t: Space, h: Lower}
   - {t: Enter, h: Raise}
   - Bksp
