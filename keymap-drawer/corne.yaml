@@ -37,8 +37,8 @@ layers:
   - .
   - /
   - \
-  - Ctrl+Alt+Shift+Cmd
-  - Meh+Cmd
+  - Meh
+  - Hyper
   - {t: Space, h: Lower}
   - {t: Enter, h: Raise}
   - Bksp
