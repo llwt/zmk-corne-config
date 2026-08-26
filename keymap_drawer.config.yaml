@@ -5,8 +5,8 @@ parse_config:
     "&caps_word": Caps Word
     "&num_word 1": Num Word
     "&kp LG(LS(N4))": Screenshot
-    "&kp RC(RA(RSHIFT))": Meh
-    "&kp LC(LA(LS(LGUI)))": Hyper
+    "&kp LC(LA(LGUI))": Hyper
+    "&kp LC(LA(LS(LGUI)))": Hyper+Shift
   modifier_fn_map:
     left_ctrl: Ctrl
     right_ctrl: Ctrl
