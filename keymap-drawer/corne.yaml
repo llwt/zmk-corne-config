@@ -37,8 +37,8 @@ layers:
   - .
   - /
   - \
-  - {t: Esc, h: System}
-  - Tab
+  - Ctrl+Alt+Shift+Cmd
+  - Meh+Cmd
   - {t: Space, h: Lower}
   - {t: Enter, h: Raise}
   - Bksp
@@ -210,7 +210,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,4 +258,7 @@ combos:
   o: 2.0
 - p: [17, 18]
   k: Num Word
+  l: [Base]
+- p: [36, 37]
+  k: System
   l: [Base]
