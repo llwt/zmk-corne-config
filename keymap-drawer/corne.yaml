@@ -38,7 +38,7 @@ layers:
   - /
   - \
   - Hyper
-  - Hyper+Shift
+  - Meh
   - {t: Space, h: Lower}
   - {t: Enter, h: Raise}
   - Bksp
