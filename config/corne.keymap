@@ -205,12 +205,12 @@
         // Layer 0 — Base (QWERTY + home row mods)
         base_layer {
             display-name = "Base";
-            // Left Hyper (former Tab) focuses/switches; Right Hyper (former Esc) moves.
+            // Hyper (former Tab) focuses/switches; Meh (former Esc) moves.
             bindings = <
                 &kp TAB    &kp Q        &kp W       &kp E        &kp R         &kp T          &kp Y      &kp U         &kp I        &kp O       &kp P           &kp MINUS
                 &kp ESC    &hml LCTRL A &hml LALT S &hml LGUI D  &hml LSHFT F  &kp G          &kp H      &hmr LSHFT J  &hmr LGUI K  &hmr LALT L &hmr LCTRL SEMI &kp SQT
                 &kp GRAVE  &kp Z        &kp X       &kp C        &kp V         &kp B          &kp N      &kp M         &kp COMMA    &kp DOT     &kp FSLH        &kp BSLH
-                                         &kp RC(RA(RS(RGUI))) &kp LC(LA(LS(LGUI))) &thl 1 SPACE                 &thl 2 RET &kp BSPC      &kp DEL
+                                         &kp RC(RA(RSHIFT)) &kp LC(LA(LS(LGUI))) &thl 1 SPACE                 &thl 2 RET &kp BSPC      &kp DEL
             >;
         };
 
