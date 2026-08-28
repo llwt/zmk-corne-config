@@ -75,6 +75,14 @@
             bindings = <&mo>, <&kp>;
         };
 
+        meh_esc: meh_escape {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&meh>, <&kp>;
+        };
+
     };
 
     macros {
@@ -231,10 +239,10 @@
         // Layer 0 — Base (QWERTY + home row mods)
         base_layer {
             display-name = "Base";
-            // Meh (former Tab) focuses/switches; Hyper (former Esc; Meh+Shift) moves.
+            // Escape holds Meh; thumb Meh focuses/switches; thumb Hyper (Meh+Shift) moves.
             bindings = <
                 &kp TAB    &kp Q        &kp W       &kp E        &kp R         &kp T          &kp Y      &kp U         &kp I        &kp O       &kp P           &kp MINUS
-                &kp ESC    &hml LCTRL A &hml LALT S &hml LGUI D  &hml LSHFT F  &kp G          &kp H      &hmr LSHFT J  &hmr LGUI K  &hmr LALT L &hmr LCTRL SEMI &kp SQT
+                &meh_esc 0 ESC &hml LCTRL A &hml LALT S &hml LGUI D  &hml LSHFT F  &kp G          &kp H      &hmr LSHFT J  &hmr LGUI K  &hmr LALT L &hmr LCTRL SEMI &kp SQT
                 &kp GRAVE  &kp Z        &kp X       &kp C        &kp V         &kp B          &kp N      &kp M         &kp COMMA    &kp DOT     &kp FSLH        &kp BSLH
                                          &hyper &meh &thl 1 SPACE                 &thl 2 RET &kp BSPC      &kp DEL
             >;
